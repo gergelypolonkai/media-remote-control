@@ -20,6 +20,6 @@ GTK_DOC_CHECK([1.14], [--flavour no-tmpl])
 AM_CONDITIONAL([ENABLE_GTK_DOC], false)
 ])
 
-PKG_CHECK_MODULES([DBUS_GLIB], dbus-glib-1)
+PKG_CHECK_MODULES([GIO], gio-2.0)
 
 AC_OUTPUT([Makefile src/Makefile docs/reference/media-remote-control/Makefile])
