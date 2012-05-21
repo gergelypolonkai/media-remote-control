@@ -1,0 +1,20 @@
+Basics
+======
+
+media-remote-control is a home-project to control an MPRIS/PulseAudio based
+media player over the network.
+
+I have a PC at home that runs on the top floor of my house, from which the
+sound is wired to both floors. Controlling it was a bit hard, as I had to go
+upstairs to switch to the next track, or to raise/lower the volume. Thus the
+idea came into my mind to write a small server software that controls this
+environment over the network. My phone is always at my hand, and is connected
+to my wireless network, so as my PC. media-remote-control runs on the PC,
+provides a RESTful API over HTTP with a specific port, and can be controlled
+from any AJAX-compatible browser.
+
+Known limitations
+=================
+
+The protocol doesn't contain any authentication code yet. This may expose your
+media player to hackers who can control your player if they hack your network.
